@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Kiosk x ALTEK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Hintergrundfarbe für den Body */
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #000000; /* Schwarz */
+            padding: 1rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff; /* Weiß */
+            text-decoration: none;
+            margin: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .background-container {
+            background-image: url('Leuchtturm.png');
+            background-size: cover; /* Bild vollständig anzeigen */
+            background-position: top center; /* Bild zentrieren */
+            background-repeat: no-repeat;
+            min-height: 100vh; /* Höhe des Containers */
+            padding-top: 1rem; /* Platz für die Navigation */
+            position: relative;
+            z-index: 0;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.9); /* Leicht transparentes Weiß */
+            padding: 2rem;
+            max-width: 800px;
+            margin: 2rem auto; /* Abstand nach unten */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            flex-grow: 1; /* Erlaubt es dem Container, sich zu strecken, um den verfügbaren Platz einzunehmen */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        h2 {
+            color: #00274d;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #000;
+            color: #fff;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+            margin-top: -35px; /* Schwarzer Balken rückt näher an das Leuchtturmbild */
+            bottom: 0;
+        }
+
+        .credits {
+            font-size: 0.7rem; /* Kleinere Schriftgröße für die Credits */
+            color: #666; /* Dezente Farbe für die Credits */
+            text-align: right;
+            margin-top: 5px;
+            font-style: italic; /* Optional: kursiv für einen dezenten Look */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 1rem;
+                margin: 1rem;
+                min-height: auto; /* Höhe bei kleineren Bildschirmen automatisch anpassen */
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                margin: 0.3rem 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 1rem;
+                margin: 1rem;
+                min-height: auto; /* Höhe bei kleineren Bildschirmen automatisch anpassen */
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 0.3rem 0;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="Plakat.png" alt="Header Bild">
+</header>
+
+<nav>
+    <a href="index.html">Startseite</a>
+    <a href="prototyp.html">Prototyp</a>
+</nav>
+
+<!-- Hintergrundbild erst ab hier -->
+<div class="background-container">
+    <div class="content">
+        <main>
+            <!-- Projektvorstellung -->
+            <section id="projektvorstellung">
+                <h2>Willkommen beim Smart Kiosk x ALTEK Projekt</h2>
+                <p>Der Smart Kiosk ist ein innovatives Projekt, das wohnungslosen Jugendlichen in der Nürnberger Fußgängerzone eine Anlaufstelle für Beratung und soziale Teilhabe bietet. In Kooperation mit dem Don Bosco Jugendwerk Nürnberg und der Technischen Hochschule Nürnberg entstand ein Ort, der die digitale Teilhabe und den sozialen Austausch fördert. Entdecken Sie mehr über unsere Vision und die Ziele, die wir mit dem Smart Kiosk erreichen möchten.</p>
+                <div class="prototype-container">
+                    <a href="smartkiosk.jpg" target="_blank">
+                        <img src="smartkiosk.jpg" alt="SmartKiosk">
+                    </a>
+                    <p class="credits">Abbildung 1 fotografiert von Kübra Sahiner</p>
+                </div>
+                <p>Im Rahmen der Projektarbeiten des Studiengangs Media Engineering, die sich über zwei Semester erstrecken, war das Ziel unserer Gruppe eine technische Ergänzung für den Smart Kiosk zu entwickeln. Dieser bietet in der Nürnberger Innenstadt eine Anlaufstelle für wohnungslose Jugendliche.</p>
+            </section>
+
+            <!-- Team -->
+            <section id="team">
+                <h2>Unser Team</h2>
+                <h3>Projektteam</h3>
+                <ul>
+                    <li><span style="font-weight: bold;">A</span>lina Ehrensberger</li>
+                    <li><span style="font-weight: bold;">L</span>ina Schönweitz</li>
+                    <li><span style="font-weight: bold;">T</span>im Smolinski</li>
+                    <li><span style="font-weight: bold;">E</span>lena Hoffmann</li>
+                    <li><span style="font-weight: bold;">K</span>übra Sahiner</li>
+                </ul>
+                <h3>Projektleiter</h3>
+                <ul>
+                    <li>Herr Prof. Dr. Timo Jakobi </li>
+                    <li>Frau Katrin Proschek </li>
+                </ul>
+            </section>
+
+            <!-- Kontaktieren Sie uns -->
+            <section id="kontakt">
+                <h2>Kontaktieren Sie uns</h2>
+                <form action="send_email.php" method="post" style="position: relative;">
+                    <div>
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required style="width: 50%;"><br><br>
+
+                        <label for="email">E-Mail:</label><br>
+                        <input type="email" id="email" name="email" required style="width: 50%;"><br><br>
+
+                        <label for="message">Nachricht:</label><br>
+                        <textarea id="message" name="message" rows="5" required style="width: 80%;"></textarea><br><br>
+
+                        <input type="submit" value="Senden" style="margin-right: 80px;">
+                    </div>
+                    <h2>Besuchen Sie uns auch auf Instagram</h2> <br>
+                    <div style="position: absolute; left: 0; bottom: 0; display: flex; align-items: center;">
+                        <a href="https://www.instagram.com/altek_nuernberg" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: black;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 30px; height: 30px; margin-right: 5px;">
+                            <span>altek_nuernberg</span>
+                        </a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Smart Kiosk. Alle Rechte vorbehalten.</p>
+</footer>
+
+</body>
+</html>
